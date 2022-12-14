@@ -132,6 +132,9 @@ body
     column-gap: 18px
     margin-bottom: 60px
     position: relative
+    justify-content: space-around
+    &-img
+      width: 100%
     &-description
       max-width: 590px
       &__name
@@ -192,17 +195,21 @@ footer
     .post-card
       max-width: 100%
       min-height: 200px
-  .work-description
-    display: block
-    width: 60%
+
 @media (max-width: 768px)
-  .header-main
-    flex-direction: column-reverse
-    justify-content: center
-    align-items: center
-    padding-top: 50px
-    &__title
+  .header
+    &-main
+      flex-direction: column-reverse
+      align-items: center
       text-align: center
-      padding-top: 20px
-  .header-main__title
-    max-width: 450px
+      padding-top: 50px
+      &__avatar
+        margin-bottom: 40px
+  .featured-works
+    .work
+      flex-direction: column
+      text-align: center
+      align-items: center
+      &-description
+        margin-top: 20px
+        max-width: auto
