@@ -13,4 +13,15 @@ viewAll.addEventListener('click', function(){
   }
 })
 
+// Burger menu
 
+const popupMenu = document.querySelector('.nav-menu');
+const menuButton = document.querySelector('.menu-icon');
+
+menuButton.addEventListener('click', function(){
+  if(menuButton){
+    menuButton.classList.toggle('_active');
+    popupMenu.classList.toggle('_active');
+
+  }
+});
