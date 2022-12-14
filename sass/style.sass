@@ -12,6 +12,8 @@ $light: #EDF7FA
 $light-text: #8695A4
 $secondary: #00A8CC
 
+// Импорт других стилей
+@import ../sass/blog
 // Базовые настройки страницы
 body
   font-family: 'Heebo', sans-serif
@@ -34,7 +36,6 @@ body
 
 // ====== Header ====== //
 .header
-  min-height: 595px
   background-color: #fff
   &-top
     min-height: 85px
@@ -90,6 +91,8 @@ body
         transition: color 0.2s ease
         &:hover, &:focus
           color: $primary
+      .page_visited
+        color: $primary
 
 // Burger Menu
 
@@ -177,7 +180,6 @@ body
 
 // ====== Footer ===== //
 footer
-  min-height: 182px
   text-align: center
   padding-top: 40px
   background-color: $light
@@ -189,7 +191,11 @@ footer
   .footer-copyright
     font-size: 14px
     font-weight: 400
-    padding-bottom: 54px
+    padding-bottom: 30px
+
+.page-title
+  font-size: 44px
+  font-weight: 900
 
 // ===== Для работы кнопки View All ====== //
 .hidden

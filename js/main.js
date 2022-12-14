@@ -1,3 +1,19 @@
+
+// Burger menu
+
+const popupMenu = document.querySelector('.nav-menu');
+const menuButton = document.querySelector('.menu-icon');
+console.log(popupMenu);
+
+menuButton.addEventListener('click', function(){
+  if(menuButton){
+    menuButton.classList.toggle('_active');
+    popupMenu.classList.toggle('_active');
+
+  }
+});
+
+
 const viewAll = document.querySelector('.view-all');
 const hiddenCard = document.querySelectorAll('.hidden');
 
@@ -12,16 +28,3 @@ viewAll.addEventListener('click', function(){
     element.classList.toggle('hidden')
   }
 })
-
-// Burger menu
-
-const popupMenu = document.querySelector('.nav-menu');
-const menuButton = document.querySelector('.menu-icon');
-
-menuButton.addEventListener('click', function(){
-  if(menuButton){
-    menuButton.classList.toggle('_active');
-    popupMenu.classList.toggle('_active');
-
-  }
-});
